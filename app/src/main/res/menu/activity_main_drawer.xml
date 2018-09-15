@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search"
+            android:title="Szukaj" />
+        <item
+            android:id="@+id/nav_exchange"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Wymień" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Historia" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Ustawienia" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Konto" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Wyloguj" />
+    </group>
+
+</menu>
