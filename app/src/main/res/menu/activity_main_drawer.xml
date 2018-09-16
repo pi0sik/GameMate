@@ -10,11 +10,11 @@
             android:title="Szukaj" />
         <item
             android:id="@+id/nav_exchange"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_exchange"
             android:title="Wymień" />
         <item
             android:id="@+id/nav_history"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_history"
             android:title="Historia" />
         <item
             android:id="@+id/nav_settings"
@@ -22,12 +22,17 @@
             android:title="Ustawienia" />
         <item
             android:id="@+id/nav_account"
-            android:icon="@drawable/ic_menu_share"
+            android:icon="@drawable/ic_account"
             android:title="Konto" />
+
+
         <item
             android:id="@+id/nav_logout"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/ic_logout"
             android:title="Wyloguj" />
+
     </group>
 
 </menu>
+
+
