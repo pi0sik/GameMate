@@ -54,7 +54,7 @@
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:text="ZALOGUJ(FINISH)" />
 
     <Button
@@ -62,6 +62,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
-        android:text="Nie masz konta? Tapnij tutaj!"/>
+        android:text="Nie masz konta? Tapnij tutaj!" />
 
 </LinearLayout>
