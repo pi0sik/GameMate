@@ -2,6 +2,7 @@ package com.example.daniel.gamemate.ui.main;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
@@ -22,9 +23,15 @@ import com.example.daniel.gamemate.ui.history.HistoryFragment;
 import com.example.daniel.gamemate.ui.login.LoginActivity;
 import com.example.daniel.gamemate.ui.search.SearchFragment;
 import com.example.daniel.gamemate.ui.settings.SettingsFragment;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    GoogleSignInClient mGoogleSignInClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +40,10 @@ public class MainActivity extends AppCompatActivity
         startActivity(new Intent(this, LoginActivity.class));
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .build();
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -84,7 +95,7 @@ public class MainActivity extends AppCompatActivity
             openFragment(new AccountFragment());
 
         } else if (id == R.id.nav_logout) {
-            // po zrobieniu firebise .logout()
+            signOut();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -97,5 +108,15 @@ public class MainActivity extends AppCompatActivity
                 .beginTransaction()
                 .replace(R.id.llFragment, fragment)
                 .commit();
+    }
+
+    private void signOut() {
+        mGoogleSignInClient.signOut()
+                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                    }
+                });
     }
 }

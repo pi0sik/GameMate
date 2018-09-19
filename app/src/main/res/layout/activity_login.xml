@@ -57,11 +57,18 @@
         android:layout_marginTop="20dp"
         android:text="ZALOGUJ(FINISH)" />
 
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
         android:text="Nie masz konta? Tapnij tutaj!" />
+
+
 
 </LinearLayout>
