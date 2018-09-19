@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="rejestracja"
         android:textColor="@color/colorAccent"
-        android:textSize="30sp"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
     <android.support.design.widget.TextInputLayout
