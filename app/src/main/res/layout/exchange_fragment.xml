@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
-        android:layout_width="368dp"
+        android:layout_width="352dp"
         android:layout_height="476dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
@@ -28,78 +28,78 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:layout_marginTop="22dp"
             android:id="@+id/editText4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#f0f0f0"
+            android:layout_marginTop="22dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Wpisz tytuł" />
+            android:text="Wpisz tytuł"
+            android:textColor="#f0f0f0" />
 
         <EditText
             android:id="@+id/editText5"
-            android:textColor="#f0f0f0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Typ Konsoli" />
+            android:text="Typ Konsoli"
+            android:textColor="#f0f0f0" />
 
         <Switch
             android:id="@+id/switch1"
-            android:textColor="#f0f0f0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Wersja pudełkowa" />
+            android:text="Wersja pudełkowa"
+            android:textColor="#f0f0f0" />
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_marginTop="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"
-            android:text="Zamienię za" />
+            android:layout_marginTop="50dp"
+            android:text="Zamienię za"
+            android:textColor="@color/colorAccent" />
 
         <EditText
             android:id="@+id/editText6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:textColor="#f0f0f0"
             android:inputType="textPersonName"
-            android:text="Wpisz tytuł" />
+            android:text="Wpisz tytuł"
+            android:textColor="#f0f0f0" />
 
         <EditText
             android:id="@+id/editText7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:textColor="#f0f0f0"
             android:inputType="textPersonName"
-            android:text="Typ konsoli" />
+            android:text="Typ konsoli"
+            android:textColor="#f0f0f0" />
 
         <Switch
             android:id="@+id/switch2"
-            android:textColor="#f0f0f0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Wersja pudełkowa" />
+            android:text="Wersja pudełkowa"
+            android:textColor="#f0f0f0" />
 
         <Switch
             android:id="@+id/switch3"
             android:layout_width="match_parent"
-            android:layout_marginTop="33dp"
-            android:textColor="@color/colorAccent"
             android:layout_height="wrap_content"
-            android:text="W promieniu" />
+            android:layout_marginTop="33dp"
+            android:text="W promieniu"
+            android:textColor="@color/colorAccent" />
 
         <MultiAutoCompleteTextView
             android:id="@+id/multiAutoCompleteTextView"
             android:layout_width="match_parent"
-            android:textColor="#f0f0f0"
             android:layout_height="wrap_content"
-            android:text="Wpisz odległość" />
+            android:text="Wpisz odległość"
+            android:textColor="#f0f0f0" />
 
         <Button
             android:id="@+id/button"
