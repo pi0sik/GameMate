@@ -1,16 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Wymiana"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="476dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:layout_marginTop="22dp"
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f0f0f0"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Wpisz tytuł" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:textColor="#f0f0f0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Typ Konsoli" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:textColor="#f0f0f0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wersja pudełkowa" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="Zamienię za" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#f0f0f0"
+            android:inputType="textPersonName"
+            android:text="Wpisz tytuł" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#f0f0f0"
+            android:inputType="textPersonName"
+            android:text="Typ konsoli" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:textColor="#f0f0f0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wersja pudełkowa" />
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="match_parent"
+            android:layout_marginTop="33dp"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:text="W promieniu" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:textColor="#f0f0f0"
+            android:layout_height="wrap_content"
+            android:text="Wpisz odległość" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dodaj ofertę" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
