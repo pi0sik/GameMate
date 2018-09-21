@@ -1,17 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ustawienia"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:layout_width="338dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Switch
+            android:id="@+id/switch6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Udostępnij lokalizację"
+            android:textColor="#f0f0f0" />
+
+        <TextView
+            android:textColor="#f0f0f0"
+            android:id="@+id/textView8"
+            android:layout_marginTop="44dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zmień hasło" />
+
+        <EditText
+            android:id="@+id/editText8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#f0f0f0"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Powtórz hasło"
+            android:textColor="#f0f0f0" />
+
+        <EditText
+            android:id="@+id/editText9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#f0f0f0"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zaakceptruj" />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

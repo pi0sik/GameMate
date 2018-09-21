@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="@color/colorPrimary">
 
     <TextView
         android:id="@+id/textView4"
@@ -17,10 +17,49 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="494dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp"></LinearLayout>
+        android:layout_width="334dp"
+        android:layout_height="488dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+
+            android:ems="10"
+            android:inputType="textPersonName"
+
+            android:text="Podaj tytuł gry"
+            android:textColor="#f0f0f0" />
+
+        <Switch
+            android:id="@+id/switch4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="w odległości"
+            android:textColor="#f0f0f0" />
+
+        <EditText
+            android:id="@+id/editText10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#f0f0f0" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="Szukaj" />
+    </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
